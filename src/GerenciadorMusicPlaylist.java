@@ -58,6 +58,7 @@ public class GerenciadorMusicPlaylist {
         novaPlaylist.getMusicas().addAll(playlist1.getMusicas());
         novaPlaylist.getMusicas().addAll(playlist2.getMusicas());
         playlists.add(novaPlaylist);
+        System.out.println();
         System.out.println("Playlists juntadas com sucesso!");
     }
 
@@ -84,6 +85,7 @@ public class GerenciadorMusicPlaylist {
     }
 
     public void reproduzirMusica(Music musica) {
-        System.out.println("Reproduzindo: " + musica.getNome() + " - " + musica.getArtista());
+        System.out.println("Reproduzindo: " + musica.getNome() + " - " + musica.getArtista() + " - Duracao: " + musica.getDuracao() + " seg " );
+        
     }
 }

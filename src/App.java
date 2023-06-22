@@ -108,10 +108,14 @@ public class App {
     //=========================================================<Add Música Playlist>=============================================================//
 
     public static void adicionarMusicaPlaylist() {
+        exibirPlaylists();
+        System.out.println();
         System.out.println("Digite o numero da playlist:");
         int playlistIndex = scanner.nextInt();
         scanner.nextLine(); // Limpar o buffer de entrada
 
+        System.out.println();
+        exibirMusicas();
         System.out.println("Digite o numero da musica:");
         int musicaIndex = scanner.nextInt();
         scanner.nextLine(); // Limpar o buffer de entrada
@@ -125,6 +129,8 @@ public class App {
 //==============================================================<Juntar Playlist>===============================================================//
 
     public static void juntarPlaylists() {
+        System.out.println();
+        exibirPlaylists();
         System.out.println("Digite o numero da primeira playlist:");
         int playlist1Index = scanner.nextInt();
         scanner.nextLine(); // Limpar o buffer de entrada
@@ -140,12 +146,13 @@ public class App {
         Playlist playlist2 = gerenciador.getPlaylists().get(playlist2Index);
 
         gerenciador.juntarPlaylists(playlist1, playlist2, novaDescricao);
-        System.out.println("Playlists juntadas com sucesso!");
     }
 
 //===========================================================<Reproduzir Playlist>==============================================================//
 
     public static void reproduzirPlaylist() {
+        System.out.println();
+        exibirPlaylists();
         System.out.println("Digite o numero da playlist:");
         int playlistIndex = scanner.nextInt();
         scanner.nextLine(); // Limpar o buffer de entrada
