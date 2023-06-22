@@ -131,6 +131,11 @@ public class App {
     public static void juntarPlaylists() {
         System.out.println();
         exibirPlaylists();
+    
+        if (gerenciador.getPlaylists().isEmpty()) {
+            return; // Return to the menu
+        }
+    
         System.out.println("Digite o numero da primeira playlist:");
         int playlist1Index = scanner.nextInt();
         scanner.nextLine(); // Limpar o buffer de entrada
@@ -139,7 +144,7 @@ public class App {
         int playlist2Index = scanner.nextInt();
         scanner.nextLine(); // Limpar o buffer de entrada
 
-        System.out.println("Digite a descricao da nova playlist:");
+        System.out.println("Digite a descrição da nova playlist:");
         String novaDescricao = scanner.nextLine();
 
         Playlist playlist1 = gerenciador.getPlaylists().get(playlist1Index);
@@ -148,6 +153,7 @@ public class App {
         gerenciador.juntarPlaylists(playlist1, playlist2, novaDescricao);
     }
 
+
 //===========================================================<Reproduzir Playlist>==============================================================//
 
     public static void reproduzirPlaylist() {
@@ -155,11 +161,11 @@ public class App {
         exibirPlaylists();
         System.out.println("Digite o numero da playlist:");
         int playlistIndex = scanner.nextInt();
-        scanner.nextLine(); // Limpar o buffer de entrada
+        scanner.nextLine(); 
 
         System.out.println("Deseja reproduzir na ordem original (1) ou aleatoriamente (2)?");
         int opcao = scanner.nextInt();
-        scanner.nextLine(); // Limpar o buffer de entrada
+        scanner.nextLine(); 
 
         Playlist playlist = gerenciador.getPlaylists().get(playlistIndex);
 
