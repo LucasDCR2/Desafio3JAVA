@@ -4,24 +4,28 @@ músicas favoritas de forma fácil e conveniente. Com este programa, o usuário 
 criar playlists personalizadas e reproduzir suas músicas de acordo com suas preferências.
 
 Cadastro de Músicas:
+
 • O usuário pode adicionar informações sobre uma nova música, como título, artista e duração em
 segundos.
 
 • Após o cadastro, a música é armazenada na biblioteca local para uso posterior.
 
 Criação de Playlists:
+
 • O usuário pode criar playlists personalizadas, selecionando músicas da biblioteca local.
 
 • Ao criar uma playlist, o usuário pode fornecer uma descrição que identifique o tema ou propósito da
 playlist.
 
 Junção de Playlists:
+
 • O usuário pode juntar duas playlists existentes em uma nova playlist.
 
 • A junção mantém a ordem de inserção das músicas e evita a duplicação de músicas na playlist
 resultante.
 
 Reprodução de Playlists:
+
 • Ao listar as playlists, é exibida a descrição juntamente com a duração total no formato "X minuto(s)
 Y segundo(s)".
 
