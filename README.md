@@ -1,18 +1,24 @@
-## Getting Started
+Desafio 3 - Gerenciamento de Músicas e Playlists
+O programa de gerenciamento de músicas e playlists deve permitir que o usuário organize e reproduza suas
+músicas favoritas de forma fácil e conveniente. Com este programa, o usuário pode cadastrar novas músicas,
+criar playlists personalizadas e reproduzir suas músicas de acordo com suas preferências.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Cadastro de Músicas:
+• O usuário pode adicionar informações sobre uma nova música, como título, artista e duração em
+segundos.
+• Após o cadastro, a música é armazenada na biblioteca local para uso posterior.
 
-## Folder Structure
+Criação de Playlists:
+• O usuário pode criar playlists personalizadas, selecionando músicas da biblioteca local.
+• Ao criar uma playlist, o usuário pode fornecer uma descrição que identifique o tema ou propósito da
+playlist.
 
-The workspace contains two folders by default, where:
+Junção de Playlists:
+• O usuário pode juntar duas playlists existentes em uma nova playlist.
+• A junção mantém a ordem de inserção das músicas e evita a duplicação de músicas na playlist
+resultante.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Reprodução de Playlists:
+• Ao listar as playlists, é exibida a descrição juntamente com a duração total no formato "X minuto(s)
+Y segundo(s)".
+• O usuário pode reproduzir uma de suas playlists na ordem original de inserção ou aleatoria
